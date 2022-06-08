@@ -1,0 +1,113 @@
+@import url(root.css);
+
+
+.bg-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    height: 100px;
+}
+
+.navbar .navbar-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.navbar-content > li > a {
+    font-weight: 600;
+    color: var(--fourth-color);
+    padding: 20px;
+}
+
+.navbar-content-dropdown .navbar-dropdown {
+    display: none;
+    position: absolute;
+    top: 80px;
+    z-index: 1;
+}
+
+.navbar-content-dropdown .bxs-down-arrow {
+    font-size: 13px;
+}
+
+.navbar-content-dropdown .navbar-dropdown > li > a {
+    display: block;
+    font-weight: 600;
+    color: var(--fourth-color);
+    background-color: white;
+    padding: 10px;
+}
+
+.bg-div .menu-toggle {
+    display: none;
+    font-size: var(--font-h1);
+    color: var(--fourth-color);
+    transition: .5s;
+}
+
+.bg-div .menu-toggle.bx-x {
+    display: none;
+    font-size: var(--font-h1);
+    color: var(--fourth-color);
+    transform: rotate(360deg);
+    transition: .5s;
+}
+
+.navbar-content li:hover {
+    color: var(--main-color);
+}
+
+.navbar-content-dropdown:hover .navbar-dropdown {
+    display: block;
+    color: var(--main-color);
+}
+
+.navbar-dropdown li > a:hover {
+    color: var(--main-color)
+}
+
+.navbar-content li > a:hover {
+    color: var(--main-color);
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-content {
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        right: 0%;
+        text-align: left;
+        background-color: white;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .5s;
+    }
+
+    .navbar-content.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        transition: .5s;
+    }
+
+    .navbar .navbar-content {
+        gap: 30px;
+    }
+
+    .navbar-content-dropdown .navbar-dropdown {
+        position: relative;
+        top: 10px;
+        left: 20px;
+    }
+
+    .bg-div .menu-toggle {
+        display: block;
+    }
+    
+    .bg-div .menu-toggle.bx-x {
+        display: block;
+    }
+}
+

@@ -1,0 +1,73 @@
+@import url(../root.css);
+
+
+.main-contents-riset .title-riset-contents {
+    padding: 100px 0;
+    text-align: center;
+    font-size: var(--font-h1);
+    font-weight: 600;
+    color: var(--fourth-color)
+}
+
+.main-contents-riset .riset-contents {
+    padding-bottom: 100px;
+}
+
+.main-contents-riset .contents-riset {
+    display: flex;
+    flex: 1;
+    gap: 50px;
+}
+
+.contents-riset .content-riset {
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0 , 0, 0, 0.5);
+    width: 50%;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.content-riset .riset-button {
+    margin: 50px 0 0 0;
+}
+
+.content-riset .buku-content {
+    padding-bottom: 100px;
+}
+
+.buku-content .buku-image {
+    width: 287px;
+    height: 401px;
+    border-radius: 20px;
+}
+
+.buku-content .title-buku, .isi-buku {
+    margin-top: 20px;
+}
+
+.buku-content .title-buku {
+    font-size: var(--font-h2);
+    color: var(--fourth-color);
+    font-weight: 600;
+}
+
+.buku-content .isi-buku {
+    font-size: var(--font-p);
+    color: gray;
+    font-weight: 300;
+    height: 100px;
+}
+
+.buku-content .nama-penulis {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 992px) {
+    .main-contents-riset .contents-riset {
+        flex-direction: column;
+    }
+    .contents-riset .content-riset {
+        width: 100%;
+    }
+}

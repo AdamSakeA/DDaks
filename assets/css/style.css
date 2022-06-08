@@ -1,0 +1,157 @@
+@import url(root.css);
+@import url(contact-form.css);
+@import url(footer.css);
+@import url(navbar.css);
+
+/* homepage */
+@import url(homepage/testimonial.css);
+@import url(homepage/home.css);
+@import url(homepage/training.css);
+@import url(homepage/product.css);
+@import url(homepage/videocontent.css);
+@import url(homepage/article.css);
+
+/* profilepage */
+@import url(profilepage/profiletop.css);
+@import url(profilepage/visimisi.css);
+@import url(profilepage/choose.css);
+@import url(profilepage/pembicara.css);
+
+/* produklayananpage */
+@import url(produklayanan/produkwrapper.css);
+@import url(produklayanan/productcontent.css);
+@import url(produklayanan/gallerypelatihan.css);
+
+/* jadwalpelatihanpage */
+@import url(jadwalpelatihan/jadwaltop.css);
+@import url(jadwalpelatihan/pelatihancontent.css);
+@import url(jadwalpelatihan/silabuspop.css);
+
+/* silabuspelatihanpage */
+@import url(silabuspelatihan/silabuscontent.css);
+
+/* klien page */
+@import url(klienpage/klientop.css);
+@import url(klienpage/klienmain.css);
+
+/* riset dan buku page */
+@import url(risetdanbuku/risettop.css);
+@import url(risetdanbuku/bukucontents.css);
+@import url(risetdanbuku/filterbook.css);
+
+/* media informasi page */
+@import url(mediainformasi/trading.css);
+@import url(mediainformasi/gallery.css);
+@import url(mediainformasi/articlesect.css);
+
+@media screen and (max-width: 576px) {
+    section {
+        margin-top: 100px;
+    }
+    .container {
+        max-width: 540px;
+        margin: 0 20px;
+    }
+    /* NAVBAR-START */
+    .nav-wrapper .menu-wrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+    /* NAVBAR-END */
+
+    /* TRAINING-CONTENT-START */
+    .home-training .title-training {
+        text-align: center;
+    }
+    .training-contents {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    /* TRAINING-CONTENT-END */
+
+    /* TESTIMONIAL-START */
+    .slide-text {
+        flex-direction: column;
+        align-items: center;
+    }
+    .teks-slide {
+        text-align: center;
+    }
+    /* TESTIMONIAL-END */
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: 960px;
+        margin: 0 50px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+        /* TRAINING-CONTENT-START */
+        .home-training .title-training {
+            text-align: center;
+        }
+        .training-contents {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+        }
+        /* TRAINING-CONTENT-END */
+            
+        /* PRODUCTS-CONTENT-START */
+        .product-wrapper {
+            flex-direction: column;
+        }
+        /* PRODUCTS-CONTENT-END */
+
+        /* VIDEO-CONTENT-START */
+        .video-halonaya {
+            flex-direction: column;
+        }
+        .video-halonaya .video-content-left {
+            width: 100%;
+        }
+        
+        .video-content-left .video-content {
+            width: 100%;
+            height: 300px;
+            border-radius: 20px;
+            border: none;
+        }
+        
+        .video-content-right {
+            width: 100%;
+        }
+        /* VIDEO-CONTENT-END */
+
+        /* ARTIKEL-START */
+        .info-content .articles {
+            flex-direction: column;
+        }
+        .articles .info-container {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        /* ARTIKEL-END */
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .container {
+        max-width: 1240px;
+        margin: auto;
+    }
+}

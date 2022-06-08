@@ -1,0 +1,32 @@
+.klien-main {
+    text-align: center;
+}
+
+.klien-main .title-klien-mains {
+    font-size: var(--font-h1);
+    color: var(--fourth-color);
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.klien-main .container-logoklien {
+    padding: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    gap: 30px;
+}
+
+.container-logoklien .logo-klien {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.logo-klien:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    transition: 0.5s;
+}

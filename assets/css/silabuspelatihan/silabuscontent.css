@@ -1,0 +1,71 @@
+@import url(../root.css);
+
+
+.silabus-training .title-silabustraining{
+    padding: 100px 0;
+    text-align: center;
+    font-size: var(--font-h1);
+    color: var(--fourth-color);
+    font-weight: 600;
+}
+
+.silabus-training .silabustraining-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.silabustraining-container .silabustraining-content {
+    width: 40%;
+    padding: 20px;
+}
+
+.silabustraining-container .title-contentsilabus {
+    width: 100%;
+    padding: 50px 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: var(--font-h2);
+    font-weight: 600;
+    background-color: var(--main-color);
+    color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.silabustraining-container .container-isi-silabus {
+    background-color: white;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    margin-top: -5px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.panel {
+    max-height: 0;
+}
+
+.container-isi-silabus .isi-silabus {
+    padding: 10px 0;
+    color: var(--fourth-color);
+}
+
+.isi-silabus > ul {
+    font-size: var(--font-p);
+    font-weight: 300;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .silabus-training .title-silabustraining {
+        padding: 100px 20px;
+    }
+    .silabus-training .silabustraining-container {
+       flex-direction: column;
+    }
+    .silabustraining-container .silabustraining-content {
+        width: 100%;
+    }
+}

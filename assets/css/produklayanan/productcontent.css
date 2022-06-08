@@ -1,0 +1,54 @@
+@import url(../root.css);
+
+.product-layanan-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.product-layanan-content:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.product-layanan-content .pict-product-content {
+    width: 50%;
+    height: auto;
+}
+
+.judul-product-content .title-product-content {
+    font-size: var(--font-h1);
+    color: var(--fourth-color);
+}
+
+.judul-product-content .isi-product-content {
+    font-size: var(--font-p);
+    color: gray;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.title-product-content:hover {
+    color: var(--main-color);
+}
+
+
+@media screen and (max-width: 992px) {
+    .product-layanan-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .product-layanan-content:nth-child(2) {
+        flex-direction: column;
+    }
+    .product-layanan-content .pict-product-content {
+        width: 100%;
+    }
+    .judul-product-content .title-product-content {
+        font-size: var(--font-h2);
+    }
+    .judul-product-content .isi-product-content {
+        font-size: var(--font-h3);
+    }
+}

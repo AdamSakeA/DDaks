@@ -1,0 +1,37 @@
+@import url(../root.css);
+
+.top-riset {
+    margin-top: 0px;
+    background: linear-gradient(180deg, #FFFBCA 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.riset-top {
+    display: flex;
+    align-items: center;
+}
+
+.riset-top .image-riset-top {
+    width: 50%;
+}
+
+.isi-riset-top .title-riset-top {
+    font-size: var(--font-h1);
+    color: var(--fourth-color);
+    font-weight: 600;
+}
+
+.isi-riset-top .isi-title-riset-top {
+    font-size: var(--font-p);
+    color: gray;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 576px) {
+    .riset-top {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .riset-top .image-riset-top {
+        width: 100%;
+    }
+}

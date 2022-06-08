@@ -1,0 +1,50 @@
+@import url(../root.css);
+
+.pembicara-content {
+    text-align: center;
+}
+
+.pembicara-content .title-pembicara {
+    font-size: var(--font-h1);
+    color: var(--fourth-color);
+}
+
+.pembicara-content .pembicara-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.pembicara-box .background-pembicara {
+    margin-top: 20px;
+    background-image: url(../../picture/pembicara1.svg);
+    width: 280px;
+    height: 280px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.background-pembicara .nama-pembicara {
+    margin-top: 250px;
+    font-size: var(--font-h3);
+    color: white;
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 576px) {
+    .pembicara-content .pembicara-box {
+        align-items: center;
+        flex-direction: column;
+    }
+    .pembicara-box .background-pembicara {
+        width: 100%;
+        height: 400px;
+    }
+    .background-pembicara .nama-pembicara {
+        margin-top: 350px;
+    }
+}
+

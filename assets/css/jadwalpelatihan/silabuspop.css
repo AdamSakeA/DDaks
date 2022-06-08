@@ -1,0 +1,46 @@
+@import url(../root.css);
+
+.silabus-pop-pelatihan-page {
+    margin-top: 0px;
+    background: linear-gradient(180deg, #FFFBCA 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.silabus-pop-pelatihan{
+    margin-top: 0;
+}
+
+.silabus-popup {
+    display: flex;
+    align-items: center;
+}
+
+.silabus-popup .pict-silabus-pop {
+    width: 50%;
+}
+
+.silabus-popup .silabus-pop-right {
+    padding: 20px;
+}
+
+.silabus-pop-right .title-silabuspop {
+    font-size: var(--font-h1);
+    color: var(--fourth-color);
+    margin-bottom: 20px;
+}
+
+.silabus-pop-right .isi-silabuspop {
+    font-size: var(--font-p);
+    color: gray;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 576px) {
+    .silabus-popup {
+        flex-direction: column;
+        text-align: center;
+    }
+    .silabus-popup .pict-silabus-pop {
+        width: 100%;
+    }
+}

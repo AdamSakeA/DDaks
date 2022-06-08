@@ -1,0 +1,148 @@
+@import url(../root.css);
+
+
+.gallery {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    padding-top: 50px;
+    align-items: center;
+}
+
+.gallery .judul-gallery {
+    width: 50%;
+}
+
+.judul-gallery > p {
+    font-size: var(--font-p);
+    color: gray;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.gallery .title-gallery {
+  font-size: var(--font-h1);
+  color: var(--fourth-color);
+  margin-bottom: 20px;
+}
+
+.gallery-slider {
+  margin-top: 20px;
+  width: 50%;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-slides {
+  display: flex;
+  overflow-x: scroll;
+  position: relative;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.gallery-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+  scroll-snap-align: center;
+  margin-right: 0px;
+  box-sizing: border-box;
+  transform-origin: center center;
+  transform: scale(1);
+}
+
+.teks-slide {
+  width: 80%;
+  text-align: left;
+  margin: 20px 20px;
+  align-items: center;
+}
+
+.teks-slide .title-name {
+  font-size: var(--font-h2);
+}
+
+.teks-slide > p {
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.gallery-slide-text {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.gallery-slide-text > img {
+  width: 80%;
+  max-height: 300px;
+  border-radius: 20px;
+  object-fit: inherit;
+  object-position: center;
+}
+
+.gallery-slide a {
+  background: none;
+  border: none;
+}
+
+a.slide__prev,
+.gallery-slider::before {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  left: 5%;
+}
+
+a.slide__next,
+.gallery-slider::after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  right: 5%;
+}
+
+.gallery-slider::before,
+.gallery-slider::after,
+.slide__prev,
+.slide__next {
+  position: absolute;
+  top: 48%;
+  width: 35px;
+  height: 35px;
+  border: solid black;
+  border-width: 0 4px 4px 0;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+.gallery-slider::before,
+.gallery-slider::after {
+  content: "";
+  z-index: 1;
+  background: none;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 992px) {
+    .gallery { 
+        flex-direction: column-reverse;
+    }
+
+    .gallery .judul-gallery {
+        width: 100%;
+        text-align: center;
+    }
+
+    .gallery-slider {
+        margin-top: 20px;
+        width: 100%;
+        border-radius: 30px;
+        overflow: hidden;
+        position: relative;
+    }
+}

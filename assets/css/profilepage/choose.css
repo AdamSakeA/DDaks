@@ -1,0 +1,31 @@
+@import url(../root.css);
+
+.pilih-daksanaya {
+    margin-top: 0px;
+}
+
+.choose {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.choose .title-choose{
+    font-size: var(--font-h1);
+    color: var(--fourth-color);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.choose .isi-choose {
+    font-size: var(--font-p);
+    color: gray;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.choose .link-pilih-daksanaya {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}

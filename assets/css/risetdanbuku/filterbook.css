@@ -1,0 +1,83 @@
+@import url(../root.css);
+
+.filter-books .title-filter-books {
+    font-size: var(--font-h1);
+    font-weight: 600;
+    color: var(--fourth-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-books .filter-button {
+    padding: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.filter-button .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: var(--font-h3);
+    font-weight: 600;
+    background-color: #B4E2FF;
+    color: #006B99;
+}
+
+.btn:hover {
+    background-color: #72c8fd;
+}
+
+.btn.active {
+    background-color: #00aef9;
+    color: white;
+}
+
+.filter-container .filterDiv {
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    margin: 30px 0;
+}
+
+.filterDiv {
+    display: none;
+}
+
+.filterDiv .title-filter {
+    font-size: var(--font-h2);
+    color: var(--fourth-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.filterDiv .penulis-filter {
+    font-size: var(--font-h3);
+    color: gray;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.filterDiv .link-filter {
+    font-weight: 600;
+}
+
+.show {
+    display: block;
+}
+
+@media screen and (max-width: 576px) {
+    .filter-books .filter-button {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .filterDiv .title-filter {
+        font-size: var(--font-h3);
+    }
+}

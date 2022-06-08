@@ -1,0 +1,52 @@
+@import url(../root.css);
+
+.klien {
+    background: linear-gradient(180deg, #2D80A4 0%, #03567A 100%);
+    margin-top: 0px;
+    height: 300px;
+}
+
+.klien .klien-top {
+    display: flex;
+    justify-content: left;
+    gap: 40px;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.klien-top .title-klien {
+    font-size: var(--font-h1);
+    font-weight: 600;
+    color: white;
+    width: 60%;
+}
+
+.klien-top .klien-contents {
+    text-align: center;
+    align-items: center;
+}
+
+.klien-contents .jml-klien {
+    font-size: 80px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.klien-contents .title-klien-top {
+    font-size: var(--font-h3);
+    font-weight: 600;
+    color: white;
+}
+
+@media screen and (max-width: 576px) {  
+    .klien-top .title-klien {
+        font-size: var(--font-h2);
+    }
+    .klien-contents .jml-klien {
+        font-size: 80px;
+        font-weight: 600;
+        color: var(--secondary-color);
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,33 @@
+.contact-form {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-color);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.contact-form .title-contactform {
+    width: 50%;
+    color: white;
+}
+
+.contact-form .main-button {
+    background-color: white;
+    color: var(--main-color);
+    font-size: var(--font-h3);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    .contact-form {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-form .title-contactform {
+        font-size: var(--font-h2);
+        width: 100%;
+        color: white;
+        margin-bottom: 20px;
+    }    
+}

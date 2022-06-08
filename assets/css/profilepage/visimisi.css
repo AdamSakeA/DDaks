@@ -1,0 +1,39 @@
+@import url(../root.css);
+
+.visi-misi {
+    display: flex;
+    gap: 20px;
+}
+
+.visi-misi .visimisi-content {
+    background-color: white;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+    width: 50%;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.visimisi-content > h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: var(--font-h1);
+    color: var(--fourth-color);
+}
+
+.visimisi-content .isi-visimisi {
+    font-size: var(--font-p);
+    color: gray;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .visi-misi {
+        flex-direction: column;
+    }
+    .visi-misi .visimisi-content {
+        width: 100%;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,49 @@
+@import url(../root.css);
+
+.product-layanan {
+    margin-top: 0;
+}
+
+.background-wrapper {
+    background-image: url(../../picture/cover-produk-layanan.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-wrapper .produk-wrapper {
+    padding: 200px 0;
+}
+
+.produk-wrapper .title-wrapper {
+    font-size: var(--font-h1);
+    font-weight: 600;
+    color: white;
+}
+
+.judul-product-layanan .product{
+    text-align: center;
+}
+
+.product .title-products {
+    font-size: var(--font-h1);
+    font-weight: 600;
+    color: var(--fourth-color);
+}
+
+.product .isi-product-layanan {
+    margin-top: 20px;
+    font-size: var(--font-p);
+    color: gray;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 576px) {
+    .background-wrapper {
+        height: 300px;
+    }
+    .background-wrapper .produk-wrapper {
+        padding: 70px 0;
+    }
+}

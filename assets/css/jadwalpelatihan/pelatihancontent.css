@@ -1,0 +1,100 @@
+@import url(../root.css);
+
+
+.jadwalpelatihan-stage .title-jadwalpelatihan-contents{
+    font-size: var(--font-h1);
+    color: var(--fourth-color);
+    margin-bottom: 20px;
+}
+
+.jadwalpelatihan-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 5px rgba(0 , 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.jadwalpelatihan-content .pict-jadwalpelatihan {
+    background-color: var(--third-color);
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.jadwalpelatihan-right .title-pelatihan {
+    font-size: var(--font-h2);
+    color: var(--fourth-color);
+}
+
+.jadwalpelatihan-right .ket-time-pelatihan {
+    display: flex;
+    flex: wrap;
+    font-weight: 600;
+    opacity: 0.5;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.jadwalpelatihan-right .isi-pelatihan {
+    font-weight: 300;
+    font-size: var(--font-p);
+    color: gray;
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 576px) {
+    .jadwalpelatihan-stage .title-jadwalpelatihan-contents{
+        text-align: center;
+    }
+    .jadwalpelatihan-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .jadwalpelatihan-content .pict-jadwalpelatihan {
+        width: 100%;
+    }
+    .jadwalpelatihan-content .jadwalpelatihan-right {
+        padding: 20px;
+        align-items: center;
+    }
+    .jadwalpelatihan-right .ket-time-pelatihan {
+        margin-top: 10px;
+        justify-content: center;
+    }
+    .jadwalpelatihan-right .isi-pelatihan {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 576px) {
+    .jadwalpelatihan-content .pict-jadwalpelatihan {
+        width: 500px;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .jadwalpelatihan-stage .title-jadwalpelatihan-contents{
+        text-align: center;
+    }
+    .jadwalpelatihan-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .jadwalpelatihan-content .jadwalpelatihan-right {
+        padding: 20px;
+        align-items: center;
+    }
+    .jadwalpelatihan-right .ket-time-pelatihan {
+        margin-top: 10px;
+        justify-content: center;
+    }
+    .jadwalpelatihan-right .isi-pelatihan {
+        width: 100%;
+    }
+}
+

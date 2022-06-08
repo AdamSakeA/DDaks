@@ -1,0 +1,26 @@
+.jadwalpelatihan-top-home {
+    margin-top: 0;
+}
+
+.jadwalpelatihan-top-home .background-jadwal {
+    background-image: url(../../picture/cover-jadwal-pelatihan.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-home .title-tophome {
+    width: 40%;
+    font-size: var(--font-h1);
+    font-weight: 600;
+    color: white;
+    padding: 150px 0;
+}
+
+@media screen and (max-width: 992px) {
+    .top-home .title-tophome {
+        width: 100%;
+        text-align: center;
+    }
+}

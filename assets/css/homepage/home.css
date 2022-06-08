@@ -1,0 +1,75 @@
+/* HOME-WRAPPER-START */
+@import url(../root.css);
+
+.home {
+    background: linear-gradient(261.34deg, #1485B6 -0.42%, #E2E772 99.48%);
+    height: 500px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 50px 50px;
+}
+
+.home .home-wrapper {
+    color: white;
+}
+
+.home-wrapper .title-home {
+    margin-bottom: 20px;
+}
+
+.home-wrapper h1 {
+    font-size: var(--font-h1);
+}
+
+.home-wrapper p {
+    font-size: var(--font-p);
+    font-weight: 300;
+}
+
+.home-wrapper h3 {
+    font-size: var(--font-h3);
+    color: white;
+}
+/* HOME-WRAPPER-END */
+
+/* HOME-CONTENT-START */
+.home-content {
+    text-align: center;
+}
+
+.home-content .title-content {
+    margin-bottom: 20px;
+}
+
+.home-content h2 {
+    font-size: var(--font-h1);
+    color: var(--fourth-color);
+}
+
+.home-content p {
+    font-size: var(--font-p);
+    color: gray;
+    font-weight: 300;
+}
+
+.home-content .content-link {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.content-link .title-link {
+    color: var(--main-color);
+}
+/* HOME-CONTENT-END */
+
+@media screen and (max-width: 576px) {
+    .home-wrapper {
+        text-align: center;
+    }
+    .home-content .title-content {
+        text-align: center;
+    }
+
+}

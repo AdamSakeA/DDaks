@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daksanaya Management</title>
+    <!-- My css -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <!-- icon -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--navbar-start -->
+    <header class = "header">
+        <div class="container bg-div">
+            <img class="logo-img" src="assets/picture/DAKSANAYA LOGO.svg" width="130" height="45">
+            <nav class="navbar">
+                <ul class ="navbar-content">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="profilepage.html">Tentang Kami</a></li>
+                    <li class = "navbar-content-dropdown"><a  href="produklayananpage.html">Produk dan Layanan <i class='bx bxs-down-arrow'></i></a>
+                        <ul class = "navbar-dropdown">
+                            <li><a href="produklayananpage.html">Tentang Produk dan Layanan</a></li>
+                            <li><a href="jadwalpelatihan.html">Jadwal Pelatihan</a></li>
+                            <li><a href="silabuspelatihan.html">Silabus Pelatihan dan Workshop</a></li>
+                            <li><a href="risetdanbuku.html">Riset dan Buku</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="mediainformasi.html">Media Informasi</a></li>
+                    <li><a href="#">Sertifikasi</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle bx bx-grid-alt"></div>
+        </div>
+    </header>
+
+    <!-- riset-top start -->
+    <section class ="top-riset">
+        <div class="container riset-top">
+            <div class="isi-riset-top">
+                <h1 class="title-riset-top">Buku dan Riset</h1>
+                <p class="isi-title-riset-top">Merupakan sumber dari ilmu pengetahuan. Daksanaya memberikan edukasi dan pengetahuan melalui buku serta referensi tambahan seputar keuangan melalui buku dan jurnal sehingga dapat menambah wawasan Anda. Akses kapan pun dan dimana pun</p>
+            </div>
+            <img class ="image-riset-top" src="assets/books-and-research.svg" alt="RisetImage">
+        </div>
+    </section>
+
+    <!-- contents-riset start -->
+    <section class="main-contents-riset">
+        <div class="container riset-contents">
+            <h1 class="title-riset-contents">Buku Terkini</h1>
+            <div class="contents-riset">
+                <div class="content-riset">
+                    <div class="buku-content">
+                        <img src="assets/picture/corporate-financial-management.svg" alt="Buku-image" class="buku-image">
+                        <h2 class="title-buku">Corporate Financial Management</h2>
+                        <h3 class="nama-penulis">Dr Pardomuan Sihombing, MSM</h3>
+                        <p class="isi-buku">Sudah banyak disajikan buku tentang manajemen keuangan dikalangan masyarakat, khususnya kalangan akademisi. Disatu sisi, hal ini menunjukkan bahwa manajemen keuangan merupakan topik yang selalu menarik untuk dibahas. Di sisi lain, setiap buku manajemen keuangan yang sudah ada di masyarakat memiliki kelebihan dan kekurangan masing-masing</p>
+                    </div>
+                    <button class="main-button riset-button">Kontak Kami</button>
+                </div>
+
+                <div class="content-riset">
+                    <div class="buku-content">
+                        <img src="assets/picture/corporate-financial-management.svg" alt="Buku-image" class="buku-image">
+                        <h2 class="title-buku">Tips Merancang "Keuangan" (Finnancial Planning)</h2>
+                        <h3 class="nama-penulis">Dr Pardomuan Sihombing, MSM</h3>
+                        <p class="isi-buku">Perencanaan keuangan adalah proses mencapai tujuan hidup seseorang melalui manajemen keuangansecara terintegrasi dan terencana. Cakupan Perencanaan Keuangan (dana darurat asuransi, perencanaan dana pendidikan, persiapan dana pensiun, pajak, warisan)</p>
+                    </div>
+                    <button class="main-button riset-button">Gratis</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- filter book start -->
+    <section class="filter-books">
+        <div class="container filter-booksRes">
+        <h1 class="title-filter-books">Riset</h1>
+            <div class="filter-button">
+                <button class="btn active" onclick="filterSelection('all')">Show All</button>
+                <button class="btn" onclick="filterSelection('bond')">Bond Yields</button>
+                <button class="btn" onclick="filterSelection('portofolio')">Portofolio</button>
+                <button class="btn" onclick="filterSelection('eStudy')">Event Study</button>
+                <button class="btn" onclick="filterSelection('riskM')">Risk Management</button>
+                <button class="btn" onclick="filterSelection('stockR')">Stock Return</button>
+                <button class="btn" onclick="filterSelection('financialD')">Financial Distress</button>
+                <button class="btn" onclick="filterSelection('earningM')">Earning Managament</button>
+                <button class="btn" onclick="filterSelection('initialPO')">Initial Public Offering</button>
+            </div>
+            <div class="filter-container">
+                <div class="filterDiv financialD">
+                    <h2 class="title-filter">COMPARATIVE ANALYSIS OF BANKRUPTION PREDICTION MODELS IN PROPERTY AND REAL ESTATE SECTOR COMPANIES LISTED ON THE IDX 2017-2019
+                    </h2>
+                    <p class="penulis-filter">Fika Andriani, Pardomuan Sihombing
+                    </p>
+                    <a href="https://daksanaya.id/storage/app/media/Comparative%20Analysis%20of%20Bankruption%20Prediction%20Models%20in%20Property%20and%20Real%20Estate%20Sector%20Companies%20Listed%20on%20the%20IDX%202017-2019.pdf" class="title-link link-filter">Lihat PDF ></a>
+                </div>
+                <div class="filterDiv earningM">
+                    <h2 class="title-filter">THE EFFECT OF GOOD CORPORATE GOVERNANCE (GCG) MECHANISM ON EARNINGS MANAGEMENT PRACTICES OF THE STUBBEN MODEL (STUDY CASE ON MINING SECTOR COMPANIES LISTED ON THE INDONESIA STOCK EXCHANGE 2014-2019)
+                    </h2>
+                    <p class="penulis-filter">Muhammad Fairus, Pardomuan Sihombing
+                    </p>
+                    <a href="https://daksanaya.id/storage/app/media/the-effect-of-good-corporate-governance-gcg-mechanism-on-earnings-management-practices-of-the-stubben-model-study-case-on-mining-sector-companies-listed-onthe-indonesia-stock-exchange-2014-2019.pdf" class="title-link link-filter">Lihat PDF ></a>
+                </div>
+                <div class="filterDiv financialD">
+                    <h2 class="title-filter">FINANCIAL DISTRESS ANALYSIS OF REGISTERED INSURANCE COMPANIES IN INDONESIA STOCK EXCHANGE 2015-2019
+                    </h2>
+                    <p class="penulis-filter">Harjadi, Pardomuan Sihombing
+                    </p>
+                    <a href="https://daksanaya.id/storage/app/media/Financial%20Distress%20Analysis%20of%20Registered%20Insurance%20Companies%20in%20Indonesia%20Stock%20Exchange%202015-2019.pdf" class="title-link link-filter">Lihat PDF ></a>
+                </div>
+                <div class="filterDiv portofolio">
+                    <h2 class="title-filter">OPTIMAL PORTFOLIO ANALYSIS OF IDX-30 AND LQ-45 PORTFOLIO WITH THE CAPM METHOD OF THE INDONESIA STOCK EXCHANGE
+                    </h2>
+                    <p class="penulis-filter">Nur Sarva Jayana, Pardomuan Sihombing
+                    </p>
+                    <a href="https://daksanaya.id/storage/app/media/Optimal%20Portfolio%20Analysis%20of%20IDX-30%20and%20Lq-45%20With%20The%20CAPM%20Method%20of%20The%20Indonesia%20Stock%20Exchange.pdf" class="title-link link-filter">Lihat PDF ></a>
+                </div>
+                <div class="filterDiv stockR">
+                    <h2 class="title-filter">DETERMINANT ANALYSIS OF FINANCIAL RATIO ON STOCK RETURNS IN CONSTRUCTION COMPANIES REGISTERED AT INDONESIA STOCK EXCHANGE 2015-2019
+                    </h2>
+                    <p class="penulis-filter">Muhammad Reza Alfianto Siregar, Pardomuan Sihombing
+                    </p>
+                    <a href="https://daksanaya.id/storage/app/media/Determinant%20Analysis%20of%20Financial%20Ratio%20on%20Stock%20Returns%20in%20Construction%20Companies%20Registered%20at%20Indonesia%20Stock%20Exchange%202015-2019.pdf" class="title-link link-filter">Lihat PDF ></a>
+                </div>
+                <div class="filterDiv stockR">
+                    <h2 class="title-filter">DETERMINANT ANALYSIS IN PROPERTY STOCKS INDEX AT INDONESIA STOCK EXCHANGE</h2>
+                    <p class="penulis-filter">Alfan Samsuar, Pardomuan Sihombing
+                    </p>
+                    <a href="https://daksanaya.id/storage/app/media/Determinant%20Analysis%20in%20Property%20Stocks%20Index%20at%20Indonesia%20Stock%20Exchange.pdf" class="title-link link-filter">Lihat PDF ></a>
+                </div>
+                <div class="filterDiv riskM">
+                    <h2 class="title-filter">THE DETERMINANTS OF IDIOSYNCRATIC VOLATILITY IN INDONESIA BANKING INDUSTRIES
+                    </h2>
+                    <p class="penulis-filter">Amrie Firmansyah, Pardomuan Sihombing, Sri Yani Kusumastuti
+                    </p>
+                    <a href="https://daksanaya.id/storage/app/media/The%20Determinants%20of%20Idiosyncratic%20Volatility%20in%20Indonesia%20Banking%20Industries.pdf" class="title-link link-filter">Lihat PDF ></a>
+                </div>
+                <div class="filterDiv eStudy">
+                    <h2 class="title-filter">THE EFFECT OF STOCK SPLIT ANNOUNCEMENT ON THE TRADING VOLUME ACTIVITY, ABNORMAL RETURN, AND BID ASK SPREAD (STUDY ON COMPANIES LISTED ON THE IDX FOR THE PERIOD OF 2015 - 2019)
+                    </h2>
+                    <p class="penulis-filter">Rimada Diamanta Putri, Pardomuan Sihombing
+                    </p>
+                    <a href="https://daksanaya.id/storage/app/media/the-effect-of-stock-split-announcement-on-the-trading-volume-activity-abnormal-return-and-bid-ask-spread-study-on-companies-listed-on-the-idx-for-the-period-of-2015-2019.pdf" class="title-link link-filter">Lihat PDF ></a>
+                </div>
+                <div class="filterDiv bond">
+                    <h2 class="title-filter">ANALYSIS OF MACROECONOMIC EFFECTS ON THE YIELD OF CORPORATE BONDS IN INDONESIA
+                    </h2>
+                    <p class="penulis-filter">Anastasia Sianturi, Pardomuan Sihombing
+                    </p>
+                    <a href="https://daksanaya.id/storage/app/media/Analysis%20of%20Macroeconomic%20Effect%20on%20The%20Yield%20of%20Corporate%20Bonds%20in%20Indonesia.pdf" class="title-link link-filter">Lihat PDF ></a>
+                </div>
+                <div class="filterDiv bond">
+                    <h2 class="title-filter">DETERMINANT OF GOVERNMENT BOND YIELDS
+                    </h2>
+                    <p class="penulis-filter">Priyo Adiwibowo, Pardomuan Sihombing
+                    </p>
+                    <a href="https://daksanaya.id/storage/app/media/Determinant%20of%20Government%20Bond%20Yields.pdf" class="title-link link-filter">Lihat PDF ></a>
+                </div>
+                <div class="filterDiv initialPO">
+                    <h2 class="title-filter">DETERMINANTS FACTOR ANALYSYS OF UNDERPRICING ON INITIAL PUBLIC OFFERING
+                    </h2>
+                    <p class="penulis-filter">Ardhiani Fadila, Muhammad Zilal Hamzah, Pardomuan Sihombing
+                    </p>
+                    <a href="https://daksanaya.id/storage/app/media/Determinants%20Factor%20Analysys%20of%20Underpricing%20on%20Initial%20Public%20Offering.pdf" class="title-link link-filter">Lihat PDF ></a>
+                </div>
+                <div class="filterDiv bond">
+                    <h2 class="title-filter">PENGARUH FAKTOR MAKROEKONOMI DAN LIKUIDITAS TERHADAP YIELD CURVE OBLIGASI PEMERINTAH INDONESIA
+                    </h2>
+                    <p class="penulis-filter">Pardomuan Sihombing, Hary Saputra Sundoro
+                    </p>
+                    <a href="https://daksanaya.id/storage/app/media/pengaruh-faktor-makroekonomi-dan-likuiditas-terhadap-yield-curve-obligasi-pemerintah-indonesia.pdf" class="title-link link-filter">Lihat PDF ></a>
+                </div>
+                <div class="filterDiv bond">
+                    <h2 class="title-filter">FACTORS AFFECTING THE YELD CURVE FLUCTUATION OF INDONESIA GOVERNMENT BOND
+                    </h2>
+                    <p class="penulis-filter">Perdana Wahyu Santosa, Pardomuan Sihombing
+                    </p>
+                    <a href="https://daksanaya.id/storage/app/media/Factors%20Affecting%20the%20Yield%20Curve%20Fluctuation%20of%20Indonesia%20Government%20Bond.pdf" class="title-link link-filter">Lihat PDF ></a>
+                </div>
+                <div class="filterDiv stockR">
+                    <h2 class="title-filter">PENGARUH INDEKS SAHAM GLOBAL DAN KONDISI MAKRO INDONESIA TERHADAP INDEKS HARGA SAHAM GABUNGAN BURSA EFEK INDONESIA
+                    </h2>
+                    <p class="penulis-filter">Pardomuan Sihombing, Rizal
+                    </p>
+                    <a href="https://daksanaya.id/storage/app/media/pengaruh-indeks-saham-global-dan-kondisi-makro-indonesia-terhadap-indeks-harga-saham-gabungan-bursa-efek-indonesia.pdf" class="title-link link-filter">Lihat PDF ></a>
+                </div>
+                <div class="filterDiv bond">
+                    <h2 class="title-filter">DETERMINANTS OF THE INDONESIA GOVERNMENT YIELD CURVE
+                    </h2>
+                    <p class="penulis-filter">Pardomuan Sihombing, Hermanto Siregar, Adler H. Manurung, Perdana W. Santosa
+                    </p>
+                    <a href="https://daksanaya.id/storage/app/media/Determinants%20of%20The%20Indonesia%20Government%20Yield%20Curve.pdf" class="title-link link-filter">Lihat PDF ></a>
+                </div>
+                <div class="filterDiv bond">
+                    <h2 class="title-filter">DETERMINAN YIELD CURVE SURAT UTANG NEGARA
+                    </h2>
+                    <p class="penulis-filter">Pardomuan Sihombing, Hermanto Siregar, Adler H. Manurung, Perdana W. Santosa
+                    </p>
+                    <a href="https://daksanaya.id/storage/app/media/Determinan%20Yield%20Curve%20Surat%20Utang%20Negara.pdf" class="title-link link-filter">Lihat PDF ></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container foot">
+            <div class="isi-footers">
+                <a href="index.html" class="logo"><img src="assets/picture/DAKSANAYA LOGO.svg" alt="logo-daksanaya"></a>
+                <div class="footer-content">
+                    <h3>PT.Daksa Naya Management</h3>
+                    <p>Jl. Mampang Prapatan Raya No. 73 Jakarta Selatan, DKI Jakarta Indonesia</p>
+                </div>
+
+                <div class="footer-content">
+                    <h3>Kontak</h3>
+                    <div class="isi-footer">
+                        <i class='bx bxl-whatsapp'></i><p>+62 83394849833 Vita</p>
+                    </div>
+                    <div class="isi-footer">
+                        <i class='bx bxl-whatsapp'></i><p>+62 02830870223 Icha</p>    
+                    </div>
+                    <div class="isi-footer">
+                        <i class='bx bx-envelope' ></i><p>daksanayamanagement@gmail.com</p>    
+                    </div>
+                </div>
+
+                <div class="footer-content">
+                    <h3>Sosial Media</h3>
+                    <div class="footer-socialmedia">
+                        <a href="#" class="link"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="link"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="link"><i class='bx bxl-linkedin'></i></a>
+                        <a href="#" class="link"><i class='bx bxl-youtube'></i></a>
+                        <a href="#" class="link"><i class='bx bxl-telegram'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="copyright-top">
+                    <i class='bx bx-copyright'></i>
+                    <p>Copyright</p>
+                    <p>DNM</p>
+                    <p>2019</p>
+                </div>
+                <p class="copyright-bottom">All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="assets/js/home.js"></script>
+<script src="assets/js/risetdanbuku.js"></script>
+</body>
+</html>
